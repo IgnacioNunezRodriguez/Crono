@@ -14,21 +14,21 @@
             "name": "Launch Edge",
             "request": "launch",
             "type": "pwa-msedge",
-            "url": "http://laravel1.itec",
+            "url": "http://crono.ign",
             "webRoot": "${workspaceFolder}/src",
         },
         {
             "type": "firefox",
             "request": "launch",
             "name": "Firefox",
-            "url": "http://laravel1.itec",
+            "url": "http://crono.ign",
         },
         
         {
             "name": "Launch Chrome",
             "request": "launch",
             "type": "pwa-chrome",
-            "url": "http://laravel1.itec",
+            "url": "http://crono.ign",
             "webRoot": "${workspaceFolder}/src"
         },
         {
