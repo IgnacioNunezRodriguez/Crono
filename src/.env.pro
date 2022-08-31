@@ -1,8 +1,8 @@
-APP_NAME=crono
-APP_ENV=local
+APP_NAME=Laravel
+APP_ENV=production
 APP_KEY=base64:BY9FEBDtAqbErqG8gppS3+4w0owQRpa8BtGSTMLeEfA=
-APP_DEBUG=true
-APP_URL=http://crono.ign
+APP_DEBUG=false
+APP_URL=http://localhost
 
 LOG_CHANNEL=stack
 LOG_DEPRECATIONS_CHANNEL=null
@@ -13,7 +13,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
-DB_PASSWORD=1234
+DB_PASSWORD=
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
