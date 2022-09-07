@@ -13,3 +13,5 @@ Se desarrollará el crono para que pertenezca a un usuario. Cada usuario tendrá
 
 ## V3. Crono shared User
 Se desarrollará el crono para que se comparta con otros usuarios. Podremos dar permiso para solo ver o para editar.
+
+https://larainfo.com/blogs/laravel-inertia-js-crud-with-react-tutorial
