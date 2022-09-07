@@ -13,7 +13,7 @@
         {
             "name": "Launch Edge",
             "request": "launch",
-            "type": "pwa-msedge",
+            "type": "msedge",
             "url": "http://crono.ign",
             "webRoot": "${workspaceFolder}/src",
         },
@@ -27,7 +27,7 @@
         {
             "name": "Launch Chrome",
             "request": "launch",
-            "type": "pwa-chrome",
+            "type": "chrome",
             "url": "http://crono.ign",
             "webRoot": "${workspaceFolder}/src"
         },
