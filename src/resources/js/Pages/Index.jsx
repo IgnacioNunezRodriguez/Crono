@@ -6,8 +6,8 @@ export default function Index(props) {
     return (
         <>
             <Head title="Crono" />
-            <div id="rightBar" className="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-                <div className="fixed top-0 right-0 px-6 py-4 sm:block">
+            <div id="wrapper" className="flex flex-col h-screen w-screen">
+                <div id="rightBar" className="w-screen basis-8">
                     {props.auth.user ? (
                         <Link href={route('dashboard')} className="text-sm text-gray-700 dark:text-gray-500 underline">
                             Dashboard
@@ -18,22 +18,15 @@ export default function Index(props) {
                                 Log in
                             </Link>
 
-                            <Link
-                                href={route('register')}
-                                className="ml-4 text-sm text-gray-700 dark:text-gray-500 underline"
-                            >
+                            <Link href={route('register')} className="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">
                                 Register
                             </Link>
                         </>
                     )}
                 </div>
 
-                <div id="main" className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                    <div className="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                <div id="main" className="grow w-screen">
                         <Chronometer />
-                    </div>
-                </div>
-                <div id="footer"className="flex justify-center mt-4 sm:items-center sm:justify-between">
                 </div>
             </div>
         </>

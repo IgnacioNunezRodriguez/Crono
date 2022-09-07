@@ -16,6 +16,12 @@
     ],
     "files.associations": {
         "*.env.*": "dotenv",
-        "*dockerfile*": "dockerfile"
+        "*dockerfile*": "dockerfile",
+        "*.css": "tailwindcss"
+    },
+    "editor.quickSuggestions":{
+        "other": "on",
+        "comments": "on",
+        "strings": "on"
     }
 }

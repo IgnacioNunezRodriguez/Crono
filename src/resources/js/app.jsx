@@ -1,25 +1,21 @@
 import './bootstrap';
 import '../css/app.css';
-import "../css/Chronometer.css";
-import "../css/Timer.css";
-import "../css/ControlButtons.css";
-
 
 
 import React from 'react';
 import { render } from 'react-dom';
 import { createInertiaApp } from '@inertiajs/inertia-react';
-import { InertiaProgress } from '@inertiajs/progress';
+//import { InertiaProgress } from '@inertiajs/progress';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
 createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
+    title: (title) => `${title}`,
     resolve: (name) => resolvePageComponent(`./Pages/${name}.jsx`, import.meta.glob('./Pages/**/*.jsx')),
     setup({ el, App, props }) {
         return render(<App {...props} />, el);
     },
 });
 
-InertiaProgress.init({ color: '#4B5563' });
+//InertiaProgress.init({ color: '#4B5563' });
