@@ -1,5 +1,10 @@
 import './bootstrap';
 import '../css/app.css';
+import "../css/Chronometer.css";
+import "../css/Timer.css";
+import "../css/ControlButtons.css";
+
+
 
 import React from 'react';
 import { render } from 'react-dom';
