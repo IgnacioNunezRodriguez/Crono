@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CronoController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -15,6 +16,7 @@ use Inertia\Inertia;
 |
 */
 
+/*
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
@@ -23,9 +25,12 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+*/
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::resource("/",CronoController::class);
 
 require __DIR__.'/auth.php';
