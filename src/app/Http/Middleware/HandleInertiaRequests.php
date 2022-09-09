@@ -46,3 +46,14 @@ class HandleInertiaRequests extends Middleware
         ]);
     }
 }
+
+/*
+|----------------------------------------------------------------
+| Manually
+|----------------------------------------------------------------
+*/
+
+use Inertia\Inertia;
+
+Inertia::version($version);
+Inertia::version(fn () => $version); // Lazily
