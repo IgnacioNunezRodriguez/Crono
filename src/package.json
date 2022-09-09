@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite",
+        "dev": "vite --base=http://crono.ign/",
         "build": "vite build"
     },
     "devDependencies": {
